@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 /* Name: Fuad Mannan
  * Date: July 27, 2017
- * Description: This is the IHabitable interface
+ * Description: This is the TerrestrialPlanet class
  * Version: 0.1 - created file
  */
 
 namespace Assignment4
 {
-    interface IHabitable
+    public class TerrestrialPlanet : Planet, IHabitable, IHasMoons
     {
-        bool Habitable();
+
     }
 }
