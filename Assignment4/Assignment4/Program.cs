@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /* Name: Fuad Mannan
  * Date: July 27, 2017
  * Description: This is the "Driver" class
- * Version: 0.3 - Added planet objects to Main, created WaitForAnyKey method
+ * Version: 0.4 - Updated text
  */
 
 namespace Assignment4
@@ -19,8 +19,8 @@ namespace Assignment4
             //Creating *planet objects
             GiantPlanet giantPlanetObj = new GiantPlanet("Saturn", 2000, 2000, "Gas");
             TerrestrialPlanet terrestrialPlanetObj = new TerrestrialPlanet("Earth", 200, 200, true);
-            Console.WriteLine("First Giant Planet: {0}", giantPlanetObj.ToString());
-            Console.WriteLine("First Terrestrial Planet: {0}", terrestrialPlanetObj.ToString());
+            Console.WriteLine("First Giant Planet - {0}", giantPlanetObj.ToString());
+            Console.WriteLine("First Terrestrial Planet - {0}", terrestrialPlanetObj.ToString());
             WaitForAnyKey();
         }
         /// <summary>
@@ -28,7 +28,7 @@ namespace Assignment4
         /// </summary>
         static void WaitForAnyKey()
         {
-            Console.WriteLine("Press any key to exit");
+            Console.Write("Press any key to exit");
             Console.ReadKey();
         }
     }
