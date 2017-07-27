@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 /* Name: Fuad Mannan
  * Date: July 27, 2017
  * Description: This is the TerrestrialPlanet class
- * Version: 0.2 - Implemented interfaces
+ * Version: 0.3 - Updated commenting/format
  */
 
 namespace Assignment4
@@ -18,12 +18,13 @@ namespace Assignment4
         private bool _oxygen;
 
         //Constructor
-        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) : base(name, diameter, mass)
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
+            : base(name, diameter, mass)
         {
             this._oxygen = oxygen;
         }
 
-        //Public Methods
+        //Public interface Methods
         public bool HasMoons()
         {
             return (MoonCount > 0);

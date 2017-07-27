@@ -16,14 +16,19 @@ namespace Assignment4
     {
         static void Main(string[] args)
         {
-            GiantPlanet giantPlanetObj = new GiantPlanet("Saturn", 2000, 2000,"Gas");
-            Console.WriteLine("First Giant Planet: {0}",giantPlanetObj.ToString());
+            //Creating *planet objects
+            GiantPlanet giantPlanetObj = new GiantPlanet("Saturn", 2000, 2000, "Gas");
             TerrestrialPlanet terrestrialPlanetObj = new TerrestrialPlanet("Earth", 200, 200, true);
-            Console.WriteLine("First Terrestrial Planet: {0}",terrestrialPlanetObj.ToString());
+            Console.WriteLine("First Giant Planet: {0}", giantPlanetObj.ToString());
+            Console.WriteLine("First Terrestrial Planet: {0}", terrestrialPlanetObj.ToString());
             WaitForAnyKey();
         }
+        /// <summary>
+        /// This is the WaitForAnyKey method, to wait for user input before exiting console
+        /// </summary>
         static void WaitForAnyKey()
         {
+            Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
     }
