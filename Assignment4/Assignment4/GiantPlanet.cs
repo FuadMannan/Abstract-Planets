@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 /* Name: Fuad Mannan
  * Date: July 27, 2017
  * Description: This is the GiantPlanet class
- * Version: 0.1 - created file
+ * Version: 0.2 - updated interfaces
  */
 
 namespace Assignment4
 {
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         //Private Instance Variables
         private string _type;
