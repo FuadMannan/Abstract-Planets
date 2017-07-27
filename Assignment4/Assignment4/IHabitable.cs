@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Assignment4
 {
-    interface IHabitable
+    public interface IHabitable
     {
         bool Habitable();
     }
